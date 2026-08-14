@@ -1,199 +1,19 @@
-/* .counter {
-  font-size: 16px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  color: var(--accent);
-  background: var(--accent-bg);
-  border: 2px solid transparent;
-  transition: border-color 0.3s;
-  margin-bottom: 24px;
+/* Styling Design System - Cyberpunk Neo-Brutalism Theme */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-  &:hover {
-    border-color: var(--accent-border);
-  }
-  &:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 2px;
-  }
-}
-
-.hero {
-  position: relative;
-
-  .base,
-  .framework,
-  .vite {
-    inset-inline: 0;
-    margin: 0 auto;
-  }
-
-  .base {
-    width: 170px;
-    position: relative;
-    z-index: 0;
-  }
-
-  .framework,
-  .vite {
-    position: absolute;
-  }
-
-  .framework {
-    z-index: 1;
-    top: 34px;
-    height: 28px;
-    transform: perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg)
-      scale(1.4);
-  }
-
-  .vite {
-    z-index: 0;
-    top: 107px;
-    height: 26px;
-    width: auto;
-    transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg)
-      scale(0.8);
-  }
-}
-
-#center {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  place-content: center;
-  place-items: center;
-  flex-grow: 1;
-
-  @media (max-width: 1024px) {
-    padding: 32px 20px 24px;
-    gap: 18px;
-  }
-}
-
-#next-steps {
-  display: flex;
-  border-top: 1px solid var(--border);
-  text-align: left;
-
-  & > div {
-    flex: 1 1 0;
-    padding: 32px;
-    @media (max-width: 1024px) {
-      padding: 24px 20px;
-    }
-  }
-
-  .icon {
-    margin-bottom: 16px;
-    width: 22px;
-    height: 22px;
-  }
-
-  @media (max-width: 1024px) {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
-#docs {
-  border-right: 1px solid var(--border);
-
-  @media (max-width: 1024px) {
-    border-right: none;
-    border-bottom: 1px solid var(--border);
-  }
-}
-
-#next-steps ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 8px;
-  margin: 32px 0 0;
-
-  .logo {
-    height: 18px;
-  }
-
-  a {
-    color: var(--text-h);
-    font-size: 16px;
-    border-radius: 6px;
-    background: var(--social-bg);
-    display: flex;
-    padding: 6px 12px;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    transition: box-shadow 0.3s;
-
-    &:hover {
-      box-shadow: var(--shadow);
-    }
-    .button-icon {
-      height: 18px;
-      width: 18px;
-    }
-  }
-
-  @media (max-width: 1024px) {
-    margin-top: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    li {
-      flex: 1 1 calc(50% - 8px);
-    }
-
-    a {
-      width: 100%;
-      justify-content: center;
-      box-sizing: border-box;
-    }
-  }
-}
-
-#spacer {
-  height: 88px;
-  border-top: 1px solid var(--border);
-  @media (max-width: 1024px) {
-    height: 48px;
-  }
-}
-
-.ticks {
-  position: relative;
-  width: 100%;
-
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    top: -4.5px;
-    border: 5px solid transparent;
-  }
-
-  &::before {
-    left: 0;
-    border-left-color: var(--border);
-  }
-  &::after {
-    right: 0;
-    border-right-color: var(--border);
-  }
-} */
-
-/* Styling Design System */
 :root {
-	--bg-primary: #0a0b10;
-	--bg-card: rgba(255, 255, 255, 0.03);
-	--border-card: rgba(255, 255, 255, 0.08);
-	--accent: #2dd4bf;
-	--accent-glow: rgba(45, 212, 191, 0.25);
-	--text-main: #f3f4f6;
-	--text-muted: #9ca3af;
-	--font-family: "Outfit", system-ui, -apple-system, sans-serif;
-	--grad-primary: linear-gradient(135deg, #2dd4bf 0%, #3b82f6 100%);
+	--bg-primary: #080711;
+	--bg-card: #121026;
+	--border-color: #000000;
+	--accent-magenta: #d946ef;
+	--accent-cyan: #06b6d4;
+	--accent-lime: #84cc16;
+	--text-main: #f8fafc;
+	--text-muted: #94a3b8;
+	--font-family: 'Space Mono', monospace;
+	--neo-shadow: 6px 6px 0px #000000;
+	--neo-shadow-hover: 8px 8px 0px #000000;
+	--neo-shadow-active: 2px 2px 0px #000000;
 }
 
 * {
@@ -222,8 +42,10 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	padding: 1.5rem 3rem;
-	border-bottom: 1px solid var(--border-card);
-	backdrop-filter: blur(8px);
+	background-color: var(--accent-magenta);
+	color: #000000;
+	border-bottom: 4px solid var(--border-color);
+	box-shadow: 0 4px 0px rgba(0,0,0,0.15);
 }
 
 .logo-container {
@@ -233,35 +55,35 @@ body {
 }
 
 .logo-emoji {
-	font-size: 1.8rem;
+	font-size: 2rem;
 }
 
 .logo-text {
-	font-size: 1.4rem;
+	font-size: 1.8rem;
 	font-weight: 700;
-	letter-spacing: -0.5px;
-	background: var(--grad-primary);
-	-webkit-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
+	text-transform: uppercase;
+	color: #000000;
+	letter-spacing: -1px;
 }
 
 .badge {
-	background: var(--border-card);
-	padding: 0.4rem 0.8rem;
-	border-radius: 50px;
+	background: #ffffff;
+	color: #000000;
+	padding: 0.4rem 1rem;
+	border-radius: 4px;
 	font-size: 0.85rem;
-	font-weight: 600;
-	color: var(--accent);
-	border: 1px solid rgba(45, 212, 191, 0.2);
+	font-weight: 700;
+	text-transform: uppercase;
+	border: 3px solid var(--border-color);
+	box-shadow: 3px 3px 0px var(--border-color);
 }
 
 /* Layout Grid */
 .dashboard-grid {
 	display: grid;
-	grid-template-columns: 1fr 1.5fr;
-	gap: 2rem;
-	padding: 2.5rem 3rem;
+	grid-template-columns: 1fr 1.3fr;
+	gap: 2.5rem;
+	padding: 3rem;
 	flex-grow: 1;
 }
 
@@ -271,27 +93,33 @@ body {
 	}
 }
 
-/* Glass Card */
+/* Neo-Brutalist Cyberpunk Card */
 .glass-card {
 	background: var(--bg-card);
-	border: 1px solid var(--border-card);
-	border-radius: 24px;
+	border: 4px solid var(--border-color);
+	border-radius: 0px; /* Sharp corners for retro brutalism */
 	padding: 2.5rem;
-	backdrop-filter: blur(12px);
-	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+	box-shadow: var(--neo-shadow);
 	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
+	position: relative;
 }
 
 .glass-card h2 {
 	font-size: 1.8rem;
-	font-weight: 600;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-bottom: 4px solid var(--border-color);
+	padding-bottom: 0.5rem;
+	color: var(--accent-cyan);
+	display: inline-block;
 }
 
 .subtitle {
 	color: var(--text-muted);
-	font-size: 0.95rem;
+	font-size: 0.9rem;
+	font-weight: 500;
 }
 
 /* File Upload Component */
@@ -303,8 +131,9 @@ body {
 }
 
 .dropzone {
-	border: 2px dashed var(--border-card);
-	border-radius: 16px;
+	background-color: rgba(0,0,0,0.4);
+	border: 4px dashed var(--border-color);
+	border-radius: 0px;
 	height: 320px;
 	display: flex;
 	justify-content: center;
@@ -312,17 +141,15 @@ body {
 	position: relative;
 	cursor: pointer;
 	overflow: hidden;
-	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color 0.2s ease;
 }
 
 .dropzone:hover {
-	border-color: var(--accent);
-	box-shadow: 0 0 15px var(--accent-glow);
+	background-color: rgba(6, 182, 212, 0.05);
 }
 
 .dropzone.has-preview {
 	border-style: solid;
-	border-color: var(--border-card);
 }
 
 .file-input {
@@ -338,11 +165,13 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 0.75rem;
-	color: var(--text-muted);
+	color: var(--text-main);
+	font-weight: 700;
 }
 
 .upload-icon {
-	font-size: 2.5rem;
+	font-size: 3rem;
+	filter: drop-shadow(2px 2px 0px #000);
 }
 
 .image-preview {
@@ -351,56 +180,65 @@ body {
 	object-fit: cover;
 }
 
-/* Button & Spinner */
+/* Neo-Brutalist Primary Button */
 .btn-primary {
-	background: var(--grad-primary);
-	color: white;
-	border: none;
+	background: var(--accent-cyan);
+	color: #000000;
+	border: 4px solid var(--border-color);
 	padding: 1rem;
-	border-radius: 12px;
-	font-size: 1rem;
-	font-weight: 600;
+	border-radius: 0px;
+	font-size: 1.1rem;
+	font-weight: 700;
+	text-transform: uppercase;
 	cursor: pointer;
-	transition: all 0.2s ease;
+	box-shadow: var(--neo-shadow);
+	transition: all 0.1s ease;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 52px;
+	height: 56px;
 }
 
 .btn-primary:hover:not(:disabled) {
-	transform: translateY(-2px);
-	box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4);
+	transform: translate(-3px, -3px);
+	box-shadow: var(--neo-shadow-hover);
+	background-color: #22d3ee;
+}
+
+.btn-primary:active:not(:disabled) {
+	transform: translate(2px, 2px);
+	box-shadow: var(--neo-shadow-active);
 }
 
 .btn-primary:disabled {
-	opacity: 0.6;
+	opacity: 0.5;
 	cursor: not-allowed;
+	box-shadow: none;
+	transform: none;
 }
 
 .spinner {
 	width: 24px;
 	height: 24px;
-	border: 3px solid rgba(255, 255, 255, 0.3);
-	border-top-color: white;
+	border: 4px solid rgba(0, 0, 0, 0.1);
+	border-top-color: #000000;
 	border-radius: 50%;
-	animation: spin 1s linear infinite;
+	animation: spin 0.8s linear infinite;
 }
 
 @keyframes spin {
-	to {
-		transform: rotate(360deg);
-	}
+	to { transform: rotate(360deg); }
 }
 
 /* Error Alert */
 .error-alert {
-	background: rgba(239, 68, 68, 0.1);
-	color: #ef4444;
-	border: 1px solid rgba(239, 68, 68, 0.2);
+	background: var(--accent-magenta);
+	color: #000000;
+	border: 4px solid var(--border-color);
 	padding: 1rem;
-	border-radius: 12px;
-	font-size: 0.9rem;
+	border-radius: 0px;
+	font-weight: 700;
+	box-shadow: 4px 4px 0px #000;
 }
 
 /* Metrics Dashboard Display */
@@ -410,9 +248,10 @@ body {
 	align-items: center;
 	flex-grow: 1;
 	color: var(--text-muted);
-	border: 1px dashed var(--border-card);
-	border-radius: 16px;
-	font-size: 0.95rem;
+	border: 3px dashed var(--border-color);
+	border-radius: 0px;
+	font-size: 1.05rem;
+	font-weight: 600;
 }
 
 .loading-state {
@@ -421,85 +260,87 @@ body {
 	align-items: center;
 	justify-content: center;
 	flex-grow: 1;
-	gap: 1rem;
-	color: var(--text-muted);
+	gap: 1.5rem;
+	color: var(--text-main);
+	font-weight: 700;
 }
 
 .loading-bar {
-	width: 200px;
-	height: 4px;
-	background: var(--border-card);
-	border-radius: 10px;
+	width: 250px;
+	height: 16px;
+	background: #ffffff;
+	border: 4px solid var(--border-color);
+	border-radius: 0px;
 	overflow: hidden;
 	position: relative;
+	box-shadow: 4px 4px 0px #000;
 }
 
 .loading-bar::after {
-	content: "";
+	content: '';
 	position: absolute;
 	left: 0;
 	top: 0;
 	height: 100%;
-	width: 50%;
-	background: var(--grad-primary);
-	animation: loading 1.5s ease infinite;
+	width: 40%;
+	background: var(--accent-lime);
+	border-right: 4px solid var(--border-color);
+	animation: loading 1.2s infinite linear;
 }
 
 @keyframes loading {
-	0% {
-		left: -50%;
-	}
-	100% {
-		left: 100%;
-	}
+	0% { left: -40%; }
+	100% { left: 100%; }
 }
 
 /* Results Content */
 .results-content {
 	display: flex;
 	flex-direction: column;
-	gap: 2rem;
+	gap: 2.5rem;
 	flex-grow: 1;
 }
 
 .metrics-grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: 1.25rem;
+	gap: 1.5rem;
 }
 
 .metric-box {
-	background: rgba(255, 255, 255, 0.02);
-	border: 1px solid var(--border-card);
-	padding: 1.5rem;
-	border-radius: 16px;
+	background: #ffffff;
+	color: #000000;
+	border: 4px solid var(--border-color);
+	padding: 1.5rem 1rem;
+	border-radius: 0px;
 	display: flex;
 	flex-direction: column;
 	gap: 0.5rem;
+	box-shadow: 4px 4px 0px #000;
 }
 
 .metric-box.highlighted {
-	border-color: var(--accent);
-	box-shadow: 0 0 15px var(--accent-glow);
+	background: var(--accent-lime);
+	box-shadow: 5px 5px 0px #000;
 }
 
 .metric-label {
 	font-size: 0.85rem;
-	color: var(--text-muted);
-	font-weight: 600;
+	color: #000000;
+	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 }
 
 .metric-value {
-	font-size: 2.2rem;
+	font-size: 2rem;
 	font-weight: 700;
 }
 
 .metric-unit {
 	font-size: 1rem;
-	color: var(--text-muted);
-	font-weight: 400;
+	color: rgba(0,0,0,0.6);
+	font-weight: 700;
 }
 
 /* Images visual comparison split */
@@ -510,20 +351,23 @@ body {
 }
 
 .visuals-grid h4 {
-	font-size: 0.95rem;
+	font-size: 1.1rem;
 	margin-bottom: 0.75rem;
-	color: var(--text-muted);
-	font-weight: 600;
+	color: var(--text-main);
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
 }
 
 .visual-img {
 	width: 100%;
 	height: 250px;
 	object-fit: cover;
-	border-radius: 12px;
-	border: 1px solid var(--border-card);
+	border-radius: 0px;
+	border: 4px solid var(--border-color);
+	box-shadow: 4px 4px 0px #000;
 }
 
 .depth-img {
-	filter: hue-rotate(90deg) saturate(1.5);
+	filter: hue-rotate(240deg) saturate(2) contrast(1.2); /* Saturated Cyberpunk thermal depth map */
 }
