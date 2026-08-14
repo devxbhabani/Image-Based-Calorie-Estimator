@@ -1,9 +1,9 @@
 # AuraCal: Image-Based Food Calorie & Nutrient Estimator
 
-[![Python Version](https://img.shields.com/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
-[![React Version](https://img.shields.com/badge/react-18.x-cyan.svg)](https://react.dev/)
-[![Flask Version](https://img.shields.com/badge/flask-2.3%2B-green.svg)](https://flask.palletsprojects.com/)
-[![License](https://img.shields.com/badge/license-MIT-purple.svg)](#)
+[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
+[![React Version](https://img.shields.io/badge/react-18.x-cyan.svg)](https://react.dev/)
+[![Flask Version](https://img.shields.io/badge/flask-2.3%2B-green.svg)](https://flask.palletsprojects.com/)
+[![License](https://img.shields.io/badge/license-MIT-purple.svg)](#)
 
 AuraCal is a full-stack, machine-learning-powered application designed to estimate the mass, volume, and caloric value of meals from a single overhead food photograph.
 
