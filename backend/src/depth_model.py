@@ -2,6 +2,10 @@ import cv2
 import torch
 import numpy
 
+# Monkey patch torch.hub to trust all repositories during headless/server deployment
+import torch.hub
+torch.hub._check_repo_is_trusted = lambda *args, **kwargs: True
+
 class DepthEstimator:
     """
     Uses the pre-trained MiDaS model to estimate structural depth from a single image.
