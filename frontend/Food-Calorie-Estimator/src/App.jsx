@@ -28,8 +28,9 @@ function App() {
 		const formData = new FormData();
 		formData.append("image", selectedFile);
 
+		const API_URL = import.meta.env.VITE_API_URL || "";
 		try {
-			const response = await fetch("/api/estimate", {
+			const response = await fetch(`${API_URL}/api/estimate`, {
 				method: "POST",
 				body: formData,
 			});

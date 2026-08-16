@@ -154,3 +154,4 @@ AuraCal features a **Cyberpunk Neo-Brutalist** dashboard interface designed to b
 - **Font Style:** High-contrast `Space Mono` geometric monospace typography.
 - **Color Palette:** Neon Lime (`#84cc16`), Cyberpunk Magenta (`#d946ef`), and Saturated Cyan (`#06b6d4`) offsets.
 - **Design Tokens:** Thick black borders (`4px solid #000`), sharp `0px` corners, and offset flat box-shadows (`6px 6px 0px #000`) with interactive hover translations.
+  ![alt text](image.png)
